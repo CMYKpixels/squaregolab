@@ -1,4 +1,5 @@
 /*Fonts//////////////////////////////////////////////////////*/
+
 @import url(https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans:400,800italic,800,700italic,700,400italic,300italic,300);
 * {
     border-radius: 0px !important;
@@ -8,7 +9,7 @@ body {
     color: #666;
     font-size: 15px;
     line-height: 25px;
-	font-weight: 400;
+    font-weight: 400;
     font-family: 'open sans', sans-serif;
 }
 
@@ -18,12 +19,10 @@ h3,
 h4,
 h5,
 h6 {
-    
-	font-weight: normal;
+    font-weight: normal;
     margin: 2px 0px 5px 0px;
     padding: 2px 0px;
-	color: #666;
-
+    color: #666;
 }
 
 h1,
@@ -98,37 +97,60 @@ hr.small {
     border-width: 4px;
     border-color: white;
 }
+
 #logo-img {
     background-color: #1ba1e2;
 }
 
-
-#bkgdimg {
+.banner {
     height: 100vh;
-    background-image: url("/img/plasma_sparks.png");
+    transition: 'opacity 1 ease-in-out';
+    background-image: url("/img/plasma_ray.png");
     background-size: cover;
 }
 
-#bkgdimg #logo-main {
-    height: 10vh;
-    width: auto;
-  display: block;
-  margin: 0 auto;
+.maker {
+    cursor: pointer;
+    height: 100vh;
+    transition: 'opacity 1 ease-in-out';
+    background-image: url("/img/maker_img.jpg");
+    background-size: cover;
+    /*animation: transition 1.5s;*/
 }
+
+.pro {
+    cursor: pointer;
+    height: 100vh;
+    transition: 'opacity 1 ease-in-out';
+    background-image: url("/img/plasma_sparks.png");
+    background-size: cover;
+    /*animation: transition 1.5s;*/
+}
+
+
+/*@keyframes transition {
+    50% {
+        opacity: 0;
+    }
+}*/
+
 #navbar-primary.navbar-default {
-  border: none;
+    border: none;
 }
+
 #navbar-primary.navbar-default .navbar-nav {
-  width: 100%;
-  text-align: center;
+    width: 100%;
+    text-align: right;
 }
+
 #navbar-primary.navbar-default .navbar-nav > li {
-  display: inline-block;
-  float: none;
+    display: inline-block;
+    float: none;
 }
+
 #navbar-primary.navbar-default .navbar-nav > li > a {
-  padding-left: 30px;
-  padding-right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 
@@ -147,6 +169,10 @@ hr.small {
     background-image: url(/img/plasma_sparks.png)
 }
 
+.site-heading {
+    margin-top: 20vh;
+}
+
 .site-heading h1 {
     text-align: center;
     font-family: open-sans, "helvetica neue", helvetica, sans-serif;
@@ -154,17 +180,16 @@ hr.small {
     font-weight: 800;
     text-transform: ;
     color: white;
-    text-shadow: ;
-    
+    text-shadow: 1px 1px 5px #121212;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////
+
 /*PopOver*/
- {
-    display : block;
+
+{
+    display: block;
 }
-
-
 
 .btn {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -190,9 +215,6 @@ hr.small {
 }
 
 .container-fluid {}
-
-
-
 
 #adresse li {
     list-style: none;
